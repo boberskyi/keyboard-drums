@@ -13,8 +13,9 @@ window.addEventListener('keydown', function (e) {
 });
 
 function removeTransition(e) {
-  console.log(e);
+  if (e.propertyName !== 'transform') return;
+  this.classList.remove('drums__key--pressed');
 }
 
-const KEYS = document.querySelector('.drums__key');
+const KEYS = document.querySelectorAll('.drums__key');
 KEYS.forEach(key => key.addEventListener('transitionend', removeTransition));
