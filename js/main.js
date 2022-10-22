@@ -12,9 +12,9 @@ window.addEventListener('keydown', function (e) {
   KEY.classList.add('drums__key--pressed');
 });
 
-function removeTransition(e) {
+let removeTransition = (e) => {
   if (e.propertyName !== 'transform') return;
-  this.classList.remove('drums__key--pressed');
+  e.currentTarget.classList.remove('drums__key--pressed');
 }
 
 const KEYS = document.querySelectorAll('.drums__key');
