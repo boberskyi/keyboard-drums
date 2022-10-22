@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drums app</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="drums">
+    <!-- DRUMS WRAPPER -->
+    <div class="drums__wrapper">
+      <!-- A KEY -->
+      <button class="drums__key" data-code="KeyA">
+        <kbd class="drums__key--letter">A</kbd>
+        <span class="drums__key--descript">CLAP</span>
+      </button>
+
+      <!-- S KEY -->
+      <button class="drums__key" data-code="KeyS">
+        <kbd class="drums__key--letter">S</kbd>
+        <span class="drums__key--descript">HIHAT</span>
+      </button>
+
+      <!-- D KEY -->
+      <button class="drums__key" data-code="KeyD">
+        <kbd class="drums__key--letter">D</kbd>
+        <span class="drums__key--descript">KICK</span>
+      </button>
+
+      <!-- F KEY -->
+      <button class="drums__key" data-code="KeyF">
+        <kbd class="drums__key--letter">F</kbd>
+        <span class="drums__key--descript">OPENHAT</span>
+      </button>
+
+      <!-- G KEY -->
+      <button class="drums__key" data-code="KeyG">
+        <kbd class="drums__key--letter">G</kbd>
+        <span class="drums__key--descript">BOOM</span>
+      </button>
+
+      <!-- H KEY -->
+      <button class="drums__key" data-code="KeyH">
+        <kbd class="drums__key--letter">H</kbd>
+        <span class="drums__key--descript">RIDE</span>
+      </button>
+
+      <!-- J KEY -->
+      <button class="drums__key" data-code="KeyJ">
+        <kbd class="drums__key--letter">J</kbd>
+        <span class="drums__key--descript">SNARE</span>
+      </button>
+
+      <!-- K KEY -->
+      <button class="drums__key" data-code="KeyK">
+        <kbd class="drums__key--letter">K</kbd>
+        <span class="drums__key--descript">TOM</span>
+      </button>
+
+      <!-- L KEY -->
+      <button class="drums__key" data-code="KeyL">
+        <kbd class="drums__key--letter">L</kbd>
+        <span class="drums__key--descript">TINK</span>
+      </button>
+
+    </div>
+    <!-- DRUMS WRAPPER END -->
+
+    <!-- DRUM AUDIOS -->
+    <div class="drums__audios">
+      <audio class="drums__audio" data-code="KeyA" src="sounds/clap.wav"></audio>
+      <audio class="drums__audio" data-code="KeyS" src="sounds/hihat.wav"></audio>
+      <audio class="drums__audio" data-code="KeyD" src="sounds/kick.wav"></audio>
+      <audio class="drums__audio" data-code="KeyF" src="sounds/openhat.wav"></audio>
+      <audio class="drums__audio" data-code="KeyG" src="sounds/boom.wav"></audio>
+      <audio class="drums__audio" data-code="KeyH" src="sounds/ride.wav"></audio>
+      <audio class="drums__audio" data-code="KeyJ" src="sounds/snare.wav"></audio>
+      <audio class="drums__audio" data-code="KeyK" src="sounds/tom.wav"></audio>
+      <audio class="drums__audio" data-code="KeyL" src="sounds/tink.wav"></audio>
+    </div>
+    <!-- DRUM AUDIOS END -->
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
